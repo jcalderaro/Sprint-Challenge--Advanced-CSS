@@ -1,1 +1,31 @@
 // Navigation code here
+.navbar {
+    .custom-layout(flex-end, center);
+    background-color: @nav-bg;
+    padding-bottom: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 18px;
+}
+
+h2 {
+    .custom-layout(flex-end, center);
+    background-color: @nav-bg;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: @nav-font;
+    margin: auto;
+}
+
+.top-header {
+    background-color: @nav-bg;
+
+    @media @phone {
+        body {
+            background-color: red;
+        }   
+    }
+   }

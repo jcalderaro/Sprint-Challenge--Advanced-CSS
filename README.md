@@ -34,13 +34,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A fully responsive website uses the layout that combines the features of fixed, adaptive, and fluid websites together. The section is generally divided into desktop, tablet, and phone, while using media queries. Despite taking more time to craft, a fully responsive website is the most aesthetically appealing experience for the consumer because based upon any screen size viewport, the page layout will respond by changing orientation to accommodate the device. 
+
+Alternatively, there are adaptive websites that use an overall faster layout by pulling similar concepts from that of a fixed layout. However, they incorporate media queries to create specific breakpoints within the design, generally only at the desktop, tablet, and phone areas. They typically have hard coded pixels that are organized around those queries.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Essentially both of them will include the same things, however how it is organized and presented, or the focus of the coding, changes based upon the starting point. In a mobile first design, the mindset is to keep everything within the scope of a consumer that is using a variety of phones to scroll and read through the site. Because of the mobile usage, it directly limits how much they can consume textually, as well as the typing function. For example a mobile first product could implore drop down menus and the touch feature, while keeping the usage on brief key points. The limited screen space brings more attention to focusing on what the consumer would want in that moment.
+
+On the other hand there is the desktop first approach. This focuses on showcasing large amounts of text, important information or links, as well as features among the site. Because both the screen and environment is more relaxed, the consumer is able to actually benefit from navigating through different channels to learn. The use of graphics, data, and text can create an in-depth understanding of the product rather than being limited to only accessible features on the go.
+
+To provide an example, in the case of an insurance company if they were to focus on a mobile first approach then their app would be used heavily to file a claim, get roadside assistance, or sift through frequently asked questions. Where as if they took the desktop first approach then they would include more time consuming content like how to contact an agent or how to compare your rates to other companies.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It's important to first understand what the 62.5% in the html tag is doing. Essentially, that is the percentage to equal 10 pixels. From there you can use rem units with a clear scale in mind. For example making a font size of 1.4 rem is now just 14 pixels. You can combine this to form the font size that can handle both older browsers and newers ones. Combining both in the code allows for consistent and predictable sizing for all browsers. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+So basically, CSS unchanged or unaltered, in its "vanilla" state functions to add stylistic designs and features onto an already made HTML code. Preprocessors are like modifications, plug-ins, or expansions, that build on vanilla CSS to bring in features that are only accessible within a preprocessor domain. For example the organizational aspect would be the ability to separate all of the different file categories into their own concise documents. This would allow programmers to reference the exact area to improve on in future assignments without having to sift through hundreds or thousands of lines of code. Another key function of preprocessors is the optimization brought in through creating templates or referenceable formats.
+
+Normally in vanilla CSS you would have to manually write the amount of code to produce a button. However in cases where you need to make 10, if not 200 buttons, it becomes significant time wasted. Utilizing preprocessing allows you to create 1 main button that acts as a Queen Bee. From there, you set the remaining future buttons to pull data based on the Queen, in a sense creating a hive of drones and worker bees that take orders from the main.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept with preprocessing is, for lack of a better word, the potential that exists with Queen Bee Design. Having the ability to essentially create one main function that can direct orders to any possible number of drones is an incredible time saver. Through future concepts that add complexity, you can create an entire network of code that all strings back to a handful of codes instead of thousands. My only experience with this previously was with creating in-game macros for popular video games. The idea of having 1 button cast two different abilities based on the context seemed revolutionary. Now with coding and preprocessing, you can expand upon that limitlessly, it's incredible. 
+
+Unfortunately, with the complexity of preprocessing comes the variety of confusing lessons and material. Knowing how to recognize situations where you can apply what you learn, more specifically nesting and media queries are by far my worst area. I find myself often repeating my code or taking significantly more space to reach the same end goal because instead of organizing the code in a methodical manner I have to sift through all of my work. Coding is an environment in which despite the end result being success, you could still fail by comparison to other programmers. Especially when you unlock refactoring and learn how to do what you thought was optimized in half the time. A slow skill floor with a limitless skill ceiling is what makes programming and web design so fulfilling. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
