@@ -1,8 +1,26 @@
 // Mixins Here
 
-.custom-layout(@justify, @align){
-	justify-content: @justify;
-	align-items: @align;
+// Queen Bee Button Maker 
+// AKA This is the parametric mixin
+// AKA This is the mixin that uses parameters
+// AKA Pronounced parameter not para-meter
+
+.button-creator(@btn-bg-color, @font-color, @width, @font-size) {
+    background-color: @bg-color;
+    color: @font-color;
+    width: @width;
+    height: @height;
+    font-size: @font-size;
 }
-// usage
-.custom-layout(flex-end, center);
+
+// Shortcut To Justify / Align 
+.center() {
+    display: flex;
+    justify-content: center;
+}
+
+// Shortcut To Padd + Color
+.colorpad() {
+    background-color: @nav-bg;
+    padding-bottom: 20px;
+}
