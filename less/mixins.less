@@ -11,6 +11,15 @@
     width: @width;
     height: @height;
     font-size: @font-size;
+
+    @media @phone {
+        width: 100%;
+      }
+    
+      &:hover {
+        background: @porcelain;
+        color: @btn-bg-color;
+      }
 }
 
 // Shortcut To Justify / Align 

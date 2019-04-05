@@ -248,6 +248,11 @@ footer {
   font-family: #454A59;
   font-size: 16px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .button-style {
+    width: 100%;
+  }
+}
 .home .walk .walk-text .button-style:hover {
   background: #F6F7F8;
   color: #22283A;
