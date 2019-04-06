@@ -1,9 +1,5 @@
 // Home Content
 
-body {
-   width: 100%;
-  }
-
 .home {
 
   .intro {
@@ -22,6 +18,18 @@ body {
     flex-wrap: wrap;
     width: 100%;
 
+    .blast {
+      @media @phone {
+        width: 100%;
+      } 
+    }
+
+    .sky, .launch {
+      @media @phone {
+        display: none;
+      } 
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -31,7 +39,7 @@ body {
   }
 
   .visit-planets {
-    padding: 15px;
+    
 
     h3 {
       margin-top: 11px;
@@ -39,6 +47,7 @@ body {
 
     p {
       margin-top: 13px;
+      padding: 0px;
     }
   }
 
@@ -48,9 +57,17 @@ body {
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 0px;
+      padding: 0px;
+      width: 100%;
+  }
 
     .walk-text {
       width: 50%;
+      margin-right: 15%;
 
       h3 {
         margin-bottom: 10px;
@@ -61,40 +78,75 @@ body {
       }
 
       .button-style {
-        .button-creator();
-      }
-
+        background-color: black;
+        color: white;
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+        
+        
+        @media @phone {
+            width: 200%;
+          }
+        
+          &:hover {
+            background: @porcelain;
+            color: @btn-bg-color;
+          }
+    }
+    
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      margin-top: 50px;
+
+      #walking {
+        @media @phone {
+          margin-top: 0px;
+          padding: 0px;
+          width: 100%;
+      }
+      }
+
+      
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @phone {
+          margin-top: 0px;
+          padding: 0px;
+          width: 100%;
       }
+
+      }
+      
     }
   }
 }
 }
 
+
 /* Psuedo Code Please Save Me 
-- Firstly gotta use Overflow concepts to remove any horizontal scroll bar 
-- Maybe we go with like making the outer div or body be width: 100%? Auto?
 
-Then we gotta snatch the two images that are specifically class image unique named
-as Sky and and Space and have them go Display: None on the pixel threshold.
+Firstly gotta use Overflow concepts to remove any horizontal
+ scroll bar Maybe we go with like making the outer div or 
+ body be width: 100%? Auto?
 
-Also important thing will be to make sure the paragraphs like, auto space 
-to the screen? I feel like they'll do that if I remove the horizontal bar though
+Then we gotta snatch the two images that are specifically 
+class image unique named as Sky and and Space and have 
+them go Display: None on the pixel threshold.
 
-Then we need to take the photo Space Walk class and make it stand by itself.
-The paragraph Let's Go For A Walk would then go under it, easy
+Also important thing will be to make sure the paragraphs like, 
+auto space to the screen? I feel like they'll do that if I remove
+ the horizontal bar though.
 
-Then just make the button extend to like, 90% width or something because it's not 
-entirely the whole page but it's definitely bigger than desktop size.
+Then we need to take the photo Space Walk class and make it stand 
+by itself. The paragraph Let's Go For A Walk would then go under it.
 
-Then we pass and hit week 3 and life continues
+Then just make the button extend to like, 90% width or something 
+because it's not entirely the whole page but it's definitely 
+bigger than desktop size.
 
-But firstly I should probably test that my media query actually works?
-Maybe I'll do like 500px make the whole screen red? Let's try that */
+*/
