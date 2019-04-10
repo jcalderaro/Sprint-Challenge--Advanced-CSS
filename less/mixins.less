@@ -1,1 +1,30 @@
 // Mixins Here
+
+.button-creator(@btn-bg-color, @font-color, @width, @font-size) {
+    background-color: @bg-color;
+    color: @font-color;
+    width: @width;
+    height: @height;
+    font-size: @font-size;
+
+    @media @phone {
+        width: 100%;
+      }
+    
+      &:hover {
+        background: @porcelain;
+        color: @btn-bg-color;
+      }
+}
+
+// Shortcut To Justify / Align 
+.center() {
+    display: flex;
+    justify-content: center;
+}
+
+// Shortcut To Padd + Color
+.colorpad() {
+    background-color: @nav-bg;
+    padding-bottom: 20px;
+}
